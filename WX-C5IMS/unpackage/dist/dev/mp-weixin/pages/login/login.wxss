@@ -1,0 +1,64 @@
+
+.Num-Pwd.data-v-b237504c{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	margin-top: 200rpx;
+}
+.Num.data-v-b237504c{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+}
+.Pwd.data-v-b237504c{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+}
+.input.data-v-b237504c {
+	width: 400rpx;
+	padding-left: 20rpx;
+	background-color: powderblue;
+	border: 1px solid #333333;
+}
+.btns.data-v-b237504c{
+	margin-top: 30rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+}
+.btnLogin.data-v-b237504c{
+	height: 60rpx;
+	width: 200rpx;
+	line-height: 60rpx;
+	background-color: #007aff;
+	color: #fff;
+	-webkit-border-radius: 5rpx;
+	        border-radius: 5rpx;
+	margin-right: 10rpx;
+}
+.btnQuit.data-v-b237504c{
+	height: 60rpx;
+	width: 200rpx;
+	line-height: 60rpx;
+	background-color: #dd524d;
+	color: #fff;
+	-webkit-border-radius: 5rpx;
+	        border-radius: 5rpx;
+	margin-left: 10rpx;
+}
+
