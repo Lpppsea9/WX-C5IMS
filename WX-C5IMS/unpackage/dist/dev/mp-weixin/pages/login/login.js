@@ -168,6 +168,10 @@ var _default =
   },
   methods: {
     login: function login() {
+      var user = {
+        "user_name": this.user_name,
+        "password": this.password };
+
       console.log("登陆方法");
     },
     quit: function quit() {

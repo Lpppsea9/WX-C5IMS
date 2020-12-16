@@ -31,6 +31,10 @@
 		},
 		methods: {
 			login(){
+				let user = {
+					"user_name": this.user_name,
+					"password": this.password
+				}
 				console.log("登陆方法")
 			},
 			quit(){

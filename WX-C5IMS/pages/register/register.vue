@@ -32,10 +32,13 @@
 			finishRegister(){
 				uniCloud.callFunction({
 					name:"register",
-					data:{"test":111},
+					data:{"user_name":this.user_name, "password": this.password},
 					success:(res) => {
-						console.log(res)
-					}
+						uni.showToast({
+							title:"注册成功",
+							duration:"2000"
+						})
+					},
 				})
 			}
 		}
