@@ -1,5 +1,8 @@
 
-.Num-Pwd.data-v-b237504c{
+page{
+	background-color: #f0eff4;
+}
+.Num-Pwd{
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: flex;
@@ -12,23 +15,23 @@
 	        align-items: center;
 	margin-top: 200rpx;
 }
-.Num.data-v-b237504c{
+.Num{
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: flex;
 }
-.Pwd.data-v-b237504c{
+.Pwd{
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: flex;
 }
-.input.data-v-b237504c {
+.input {
 	width: 400rpx;
 	padding-left: 20rpx;
 	background-color: powderblue;
 	border: 1px solid #333333;
 }
-.btns.data-v-b237504c{
+.btns{
 	margin-top: 30rpx;
 	display: -webkit-box;
 	display: -webkit-flex;
@@ -41,7 +44,7 @@
 	-webkit-justify-content: space-between;
 	        justify-content: space-between;
 }
-.btnLogin.data-v-b237504c{
+.btnLogin{
 	height: 60rpx;
 	width: 200rpx;
 	line-height: 60rpx;
@@ -51,7 +54,7 @@
 	        border-radius: 5rpx;
 	margin-right: 10rpx;
 }
-.btnQuit.data-v-b237504c{
+.btnQuit{
 	height: 60rpx;
 	width: 200rpx;
 	line-height: 60rpx;

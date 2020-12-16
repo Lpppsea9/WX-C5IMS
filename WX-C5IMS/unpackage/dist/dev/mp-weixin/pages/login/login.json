@@ -1,5 +1,6 @@
 {
   "navigationBarTitleText": "C5-IMS登录",
   "enablePullDownRefresh": false,
+  "backgroundColor": "#007AFF",
   "usingComponents": {}
 }

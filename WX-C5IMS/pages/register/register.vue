@@ -34,10 +34,7 @@
 					name:"register",
 					data:{"user_name":this.user_name, "password": this.password},
 					success:(res) => {
-						uni.showToast({
-							title:"注册成功",
-							duration:"2000"
-						})
+						alert("注册成功")
 					},
 				})
 			}

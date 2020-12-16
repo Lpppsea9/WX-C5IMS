@@ -5,19 +5,29 @@
 				<view>
 					<text>账号</text>
 				</view>
-				<input type="text" value="" v-model="user_name" class="UserNumber input"/>
+				<input  type="text" 
+						value="" 
+						v-model="user_name" 
+						class="UserNumber input"
+				/>
 			</view>
 			<view class="Pwd">
 				<view>
 					<text>密码</text>
 				</view>
-				<input type="text" value="" v-model="password" class="UserPassword input"/>
+				<input  type="text" 
+						value="" 
+						v-model="password" 
+						class="UserPassword input"
+						password="false"
+				/>
 			</view>
 		</view>
 		<view class="btns">
 			<button class="btnLogin" @tap="login">登录</button>
 			<button class="btnQuit" @tap="quit">退出</button>
 		</view>
+		<text >{{warning}}</text>
 	</view>
 </template>
 
@@ -26,7 +36,8 @@
 		data() {
 			return {
 				user_name:"",
-				password:""
+				password:"",
+				warning:""
 			}
 		},
 		methods: {
@@ -35,7 +46,31 @@
 					"user_name": this.user_name,
 					"password": this.password
 				}
-				console.log("登陆方法")
+				// console.log(user)
+				uniCloud.callFunction({
+					name:"login",
+					data:user,
+					success:(res) => { //res就是 result
+						// console.log(res)
+						let status = res.result.status;
+						if(status==0){
+							this.warning="登陆成功";
+							uni.navigateTo({
+								url:"../index/index"
+							})
+						}else if(status==1){
+							this.warning="用户名错误"
+						}else if(status==2){
+							this.warning="密码错误"
+						}
+					},
+					fail:(err) => {
+						this.warning="用户名错误"
+					}
+					// fail:function(){
+					// 	this.warn="用户错误"
+					// },
+				})
 			},
 			quit(){
 				uni.navigateTo({
@@ -46,7 +81,10 @@
 	}
 </script>
 
-<style scoped>
+<style >
+	page{
+		background-color: #f0eff4;
+	}
 	
 	.Num-Pwd{
 		display: flex;
