@@ -30,7 +30,13 @@
 		},
 		methods: {
 			finishRegister(){
-				console.log(1119)
+				uniCloud.callFunction({
+					name:"register",
+					data:{"test":111},
+					success:(res) => {
+						console.log(res)
+					}
+				})
 			}
 		}
 	}
