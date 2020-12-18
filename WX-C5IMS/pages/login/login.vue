@@ -81,7 +81,7 @@
 	}
 </script>
 
-<style >
+<style scoped lang="stylus">
 	page{
 		background-color: #f0eff4;
 	}

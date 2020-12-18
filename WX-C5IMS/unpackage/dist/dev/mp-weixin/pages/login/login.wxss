@@ -1,67 +1,66 @@
-
-page{
-	background-color: #f0eff4;
+page.data-v-b237504c {
+  background-color: #f0eff4;
 }
-.Num-Pwd{
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-webkit-flex-direction: column;
-	        flex-direction: column;
-	-webkit-box-align: center;
-	-webkit-align-items: center;
-	        align-items: center;
-	margin-top: 200rpx;
+.Num-Pwd.data-v-b237504c {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  margin-top: 200rpx;
 }
-.Num{
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: flex;
+.Num.data-v-b237504c {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
 }
-.Pwd{
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: flex;
+.Pwd.data-v-b237504c {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
 }
-.input {
-	width: 400rpx;
-	padding-left: 20rpx;
-	background-color: powderblue;
-	border: 1px solid #333333;
+.input.data-v-b237504c {
+  width: 400rpx;
+  padding-left: 20rpx;
+  background-color: #b0e0e6;
+  border: 1px solid #333;
 }
-.btns{
-	margin-top: 30rpx;
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: flex;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	-webkit-flex-direction: row;
-	        flex-direction: row;
-	-webkit-box-pack: justify;
-	-webkit-justify-content: space-between;
-	        justify-content: space-between;
+.btns.data-v-b237504c {
+  margin-top: 30rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
 }
-.btnLogin{
-	height: 60rpx;
-	width: 200rpx;
-	line-height: 60rpx;
-	background-color: #007aff;
-	color: #fff;
-	-webkit-border-radius: 5rpx;
-	        border-radius: 5rpx;
-	margin-right: 10rpx;
+.btnLogin.data-v-b237504c {
+  height: 60rpx;
+  width: 200rpx;
+  line-height: 60rpx;
+  background-color: #007aff;
+  color: #fff;
+  -webkit-border-radius: 5rpx;
+          border-radius: 5rpx;
+  margin-right: 10rpx;
 }
-.btnQuit{
-	height: 60rpx;
-	width: 200rpx;
-	line-height: 60rpx;
-	background-color: #dd524d;
-	color: #fff;
-	-webkit-border-radius: 5rpx;
-	        border-radius: 5rpx;
-	margin-left: 10rpx;
+.btnQuit.data-v-b237504c {
+  height: 60rpx;
+  width: 200rpx;
+  line-height: 60rpx;
+  background-color: #dd524d;
+  color: #fff;
+  -webkit-border-radius: 5rpx;
+          border-radius: 5rpx;
+  margin-left: 10rpx;
 }
 
