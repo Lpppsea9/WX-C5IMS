@@ -95,6 +95,7 @@
 	
 	.Num{
 		display: flex;
+		margin-bottom 20rpx
 	}
 	
 	.Pwd{

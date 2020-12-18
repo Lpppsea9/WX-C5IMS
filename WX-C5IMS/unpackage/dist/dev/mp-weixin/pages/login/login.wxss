@@ -18,6 +18,7 @@ page.data-v-b237504c {
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
+  margin-bottom: 20rpx;
 }
 .Pwd.data-v-b237504c {
   display: -webkit-box;
