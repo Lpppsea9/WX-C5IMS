@@ -10,18 +10,14 @@
 			}
 			
 		},
-		
 		{
 			"path": "pages/index/index",
 			"style": 
 			{
 				"navigationBarTitleText": "C5-IMS"
 			}
-		},
-		
-		
-		
-        {
+		}
+		,{
             "path" : "pages/register/register",
             "style" :                                                                
             {
@@ -30,12 +26,57 @@
             }
             
         }
-        
         ,{
             "path" : "pages/newsone/newsone",
             "style" :                                                                                    
             {
                 "navigationBarTitleText": "a",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/timedata/timedata",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/status/status",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/news/news",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "公告",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        
+        ,{
+            "path" : "pages/news/newscontent1/newscontent1",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/news/newscontent2/newscontent2",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
                 "enablePullDownRefresh": false
             }
             

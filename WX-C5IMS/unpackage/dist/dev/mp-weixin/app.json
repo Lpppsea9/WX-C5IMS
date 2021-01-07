@@ -3,7 +3,12 @@
     "pages/login/login",
     "pages/index/index",
     "pages/register/register",
-    "pages/newsone/newsone"
+    "pages/newsone/newsone",
+    "pages/timedata/timedata",
+    "pages/status/status",
+    "pages/news/news",
+    "pages/news/newscontent1/newscontent1",
+    "pages/news/newscontent2/newscontent2"
   ],
   "subPackages": [],
   "window": {
@@ -12,5 +17,6 @@
     "navigationBarBackgroundColor": "#F8F8F8",
     "backgroundColor": "#F8F8F8"
   },
+  "permission": {},
   "usingComponents": {}
 }
