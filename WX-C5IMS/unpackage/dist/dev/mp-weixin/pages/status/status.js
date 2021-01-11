@@ -128,7 +128,9 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
+//
+//
 //
 //
 //
@@ -136,16 +138,29 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 //
 //
 
-// import TimeStatus from './status-item/status-item'
-// var postData = require('../../data/posts-data')
-var _default = {
+
+var postData = __webpack_require__(/*! ../../data/workdata.json */ 80);var _default =
+{
   // name: 'Status',
   data: function data() {
     return {};
 
 
   },
-  methods: {} };exports.default = _default;
+  methods: {
+    getWorkDataOne: function getWorkDataOne() {
+      console.log(postData.data);
+
+    },
+    getWorkDataTwo: function getWorkDataTwo() {
+      uni.request({
+        url: 'http://47.103.95.119/c5pms/ajax_tabledata.php?action=m_organization&limit=10',
+        success: function success(res) {
+          console.log(res.data);
+        } });
+
+    } } };exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ })
 

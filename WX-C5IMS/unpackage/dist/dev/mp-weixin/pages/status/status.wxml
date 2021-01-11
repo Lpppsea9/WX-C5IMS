@@ -1,1 +1,1 @@
-<view><view></view></view>
+<view><view value="{{data}}" data-event-opts="{{[['input',[['__set_model',['','data','$event',[]]]]]]}}" bindinput="__e">{{res.data}}</view><button data-event-opts="{{[['tap',[['getWorkDataOne',['$event']]]]]}}" style="background-color:powderblue;" bindtap="__e">本地数据</button><button data-event-opts="{{[['tap',[['getWorkDataTwo',['$event']]]]]}}" style="background-color:powderblue;" bindtap="__e">后端接口</button></view>
