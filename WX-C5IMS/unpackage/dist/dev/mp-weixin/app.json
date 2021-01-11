@@ -1,14 +1,14 @@
 {
   "pages": [
-    "pages/login/login",
     "pages/index/index",
+    "pages/login/login",
     "pages/register/register",
     "pages/newsone/newsone",
     "pages/timedata/timedata",
     "pages/status/status",
-    "pages/news/news",
-    "pages/news/newscontent1/newscontent1",
-    "pages/news/newscontent2/newscontent2"
+    "pages/news-item/news-item",
+    "pages/news-detail/news-detail",
+    "pages/status/status-item/status-item"
   ],
   "subPackages": [],
   "window": {

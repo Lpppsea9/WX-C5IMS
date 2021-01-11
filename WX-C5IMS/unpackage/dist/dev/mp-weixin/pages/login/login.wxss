@@ -50,8 +50,7 @@ page.data-v-b237504c {
   line-height: 60rpx;
   background-color: #007aff;
   color: #fff;
-  -webkit-border-radius: 5rpx;
-          border-radius: 5rpx;
+  border-radius: 5rpx;
   margin-right: 10rpx;
 }
 .btnQuit.data-v-b237504c {
@@ -60,8 +59,7 @@ page.data-v-b237504c {
   line-height: 60rpx;
   background-color: #dd524d;
   color: #fff;
-  -webkit-border-radius: 5rpx;
-          border-radius: 5rpx;
+  border-radius: 5rpx;
   margin-left: 10rpx;
 }
 

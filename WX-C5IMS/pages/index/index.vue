@@ -76,7 +76,7 @@
 			// 跳转页面
 			ToNews(){
 				uni.navigateTo({
-                    url:"../news/news" 
+                    url:"../news-item/news-item" 
                 })
 			},
 			ToStatus(){

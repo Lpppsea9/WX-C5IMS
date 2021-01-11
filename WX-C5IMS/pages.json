@@ -1,6 +1,13 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
+			"path": "pages/index/index",
+			"style": 
+			{
+				"navigationBarTitleText": "C5-IMS"
+			}
+		},
+		{
 			"path" : "pages/login/login",
 			"style" :
 			{
@@ -11,13 +18,6 @@
 			
 		},
 		{
-			"path": "pages/index/index",
-			"style": 
-			{
-				"navigationBarTitleText": "C5-IMS"
-			}
-		}
-		,{
             "path" : "pages/register/register",
             "style" :                                                                
             {
@@ -25,8 +25,8 @@
                 "enablePullDownRefresh": false
             }
             
-        }
-        ,{
+        },
+        {
             "path" : "pages/newsone/newsone",
             "style" :                                                                                    
             {
@@ -34,8 +34,8 @@
                 "enablePullDownRefresh": false
             }
             
-        }
-        ,{
+        },
+        {
             "path" : "pages/timedata/timedata",
             "style" :                                                                                    
             {
@@ -43,8 +43,8 @@
                 "enablePullDownRefresh": false
             }
             
-        }
-        ,{
+        },
+        {
             "path" : "pages/status/status",
             "style" :                                                                                    
             {
@@ -52,19 +52,18 @@
                 "enablePullDownRefresh": false
             }
             
-        }
-        ,{
-            "path" : "pages/news/news",
+        },
+        {
+            "path" : "pages/news-item/news-item",
             "style" :                                                                                    
             {
-                "navigationBarTitleText": "公告",
+                "navigationBarTitleText": "",
                 "enablePullDownRefresh": false
             }
             
-        }
-        
-        ,{
-            "path" : "pages/news/newscontent1/newscontent1",
+        },
+        {
+            "path" : "pages/news-detail/news-detail",
             "style" :                                                                                    
             {
                 "navigationBarTitleText": "",
@@ -73,7 +72,7 @@
             
         }
         ,{
-            "path" : "pages/news/newscontent2/newscontent2",
+            "path" : "pages/status/status-item/status-item",
             "style" :                                                                                    
             {
                 "navigationBarTitleText": "",

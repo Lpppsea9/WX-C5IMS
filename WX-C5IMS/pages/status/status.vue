@@ -1,10 +1,11 @@
 <template>
 	<view>
-		实时状态
+		
 	</view>
 </template>
 
 <script>
+	var postData = require('../../data/posts-data')
 	export default {
 		data() {
 			return {
@@ -12,7 +13,9 @@
 			}
 		},
 		methods: {
-			
+			btnclick() {
+				console.log(postData)
+			}
 		}
 	}
 </script>
