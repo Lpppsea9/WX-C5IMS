@@ -1,7 +1,7 @@
 <template>
 	<view>
 		<!-- <time-status></time-status> -->
-		<view v-model="data">{{res.data}}</view>
+		<view ></view>
 		<button @tap="getWorkDataOne" style="background-color: powderblue">本地数据</button>
 		<button @tap="getWorkDataTwo" style="background-color: powderblue">后端接口</button>
 	</view>
@@ -30,7 +30,8 @@
 					}
 				})
 			}
-		}
+		},
+		
 	}
 </script>
 
