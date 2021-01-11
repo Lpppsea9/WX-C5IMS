@@ -134,18 +134,18 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 //
 //
 //
+//
 
-var postData = __webpack_require__(/*! ../../data/posts-data */ 80);var _default =
-{
+// import TimeStatus from './status-item/status-item'
+// var postData = require('../../data/posts-data')
+var _default = {
+  // name: 'Status',
   data: function data() {
     return {};
 
 
   },
-  methods: {
-    btnclick: function btnclick() {
-      console.log(postData);
-    } } };exports.default = _default;
+  methods: {} };exports.default = _default;
 
 /***/ })
 
