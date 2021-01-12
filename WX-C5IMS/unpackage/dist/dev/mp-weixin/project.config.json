@@ -13,6 +13,8 @@
   "libVersion": "",
   "appid": "wx5ffaacb9402e9ab5",
   "projectname": "WX-C5IMS",
+  "simulatorType": "wechat",
+  "simulatorPluginLibVersion": {},
   "condition": {
     "plugin": {
       "list": []
