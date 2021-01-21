@@ -1,7 +1,7 @@
 <template>
 	<view>
 		<!-- <time-status></time-status> -->
-		<view v-for="item in localData">{{item.id}}</view>
+		<view v-for="item in localData" >{{item.id}}</view>
 		<button @tap="getWorkDataOne" style="background-color: powderblue">本地数据</button>
 		<button @tap="getWorkDataTwo" style="background-color: powderblue;margin-bottom: 30rpx;">后端接口</button>
 	</view>
@@ -17,8 +17,8 @@
 		},
 		methods: {
 			getWorkDataOne () {
-				console.log(postData.data)
-				// var data = postData.data
+				let data = postData.data
+				console.log(data)
 			},
 			getWorkDataTwo () {
 				uni.request({

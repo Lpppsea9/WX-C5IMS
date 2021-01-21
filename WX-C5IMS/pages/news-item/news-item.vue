@@ -1,19 +1,20 @@
 <template>
-	<!-- <view class="post-container">
-	    <view class="post-author-date">
-	      <image class="post-author" src="{{avatar}}"></image>
-	      <text class="post-date">{{date}}</text>
-	    </view>
-	    <text class="post-title">{{title}}</text>
-	    <image class="post-image" src="{{imgSrc}}"></image>
-	    <text class="post-content">{{content}}</text>
-	    <view class="post-like">
-	      <image class="post-like-image" src="../../images/icon/chat.png"></image>
-	      <text class="post-like-font">{{collection}}</text>
-	      <image class="post-like-image" src="../../images/icon/view.png"></image>
-	      <text class="post-like-font">{{reading}}</text>
-	    </view>
-	 </view> -->
+	<view class="news-list">
+		<view class="news-item" @tap="toNewsDetail">
+			<view class="news-info">
+				<view class="news-title">C5-IMS平台正式对外提供公共服务</view>
+				<view class="news-desc">C5云平台已具备完善的对外API点点</view>
+			</view>
+			<view class="news-date">2021-08-05</view>
+		</view>
+		<view class="news-item" >
+			<view class="news-info">
+				<view class="news-title">技术驱动变革，数据引领创新-C5IMS</view>
+				<view class="news-desc">C5云平台的建立，是建筑能源管理点点</view>
+			</view>
+			<view class="news-date">2021-08-02</view>
+		</view>
+	</view>
 </template>
 
 <script>
@@ -24,24 +25,28 @@
 			}
 		},
 		methods: {
-			
+			toNewsDetail() {
+				uni.navigateTo({
+					url:'./news-item-detail/news-item-detail'
+				})
+			}
 		}
 	}
 </script>
 
 <style scoped lang="stylus">
-	.news-all
+	.news-list
 		display flex
 		flex-direction column
 		margin-top 20rpx
 		border-top #000000 solid 1px
-		.news-container
+		.news-item
 			width 100%
 			display flex
 			flex-direction row
 			border-bottom #000000 solid 1px
 			height 180rpx
-			.news-left
+			.news-info
 				width 65%
 				overflow hidden
 				display flex
@@ -52,7 +57,7 @@
 					font-size 35rpx
 					font-weight 600
 					margin-bottom 15rpx
-				.news-content 
+				.news-desc 
 					width: 100%;
 					font-size 30rpx
 					color #929292

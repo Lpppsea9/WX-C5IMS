@@ -27,15 +27,6 @@
             
         },
         {
-            "path" : "pages/newsone/newsone",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "a",
-                "enablePullDownRefresh": false
-            }
-            
-        },
-        {
             "path" : "pages/timedata/timedata",
             "style" :                                                                                    
             {
@@ -57,13 +48,13 @@
             "path" : "pages/news-item/news-item",
             "style" :                                                                                    
             {
-                "navigationBarTitleText": "",
+                "navigationBarTitleText": "公告",
                 "enablePullDownRefresh": false
             }
             
         },
         {
-            "path" : "pages/news-detail/news-detail",
+            "path" : "pages/status/status-item/status-item",
             "style" :                                                                                    
             {
                 "navigationBarTitleText": "",
@@ -72,10 +63,10 @@
             
         }
         ,{
-            "path" : "pages/status/status-item/status-item",
+            "path" : "pages/news-item/news-item-detail/news-item-detail",
             "style" :                                                                                    
             {
-                "navigationBarTitleText": "",
+                "navigationBarTitleText": "新闻详情",
                 "enablePullDownRefresh": false
             }
             

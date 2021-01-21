@@ -7,14 +7,13 @@
     "urlCheck": false,
     "es6": true,
     "minified": true,
-    "postcss": true
+    "postcss": true,
+    "checkSiteMap": false
   },
   "compileType": "miniprogram",
   "libVersion": "",
   "appid": "wx5ffaacb9402e9ab5",
   "projectname": "WX-C5IMS",
-  "simulatorType": "wechat",
-  "simulatorPluginLibVersion": {},
   "condition": {
     "plugin": {
       "list": []
@@ -27,6 +26,12 @@
     },
     "miniprogram": {
       "list": [
+        {
+          "name": "pages/news-item/news-item-detail/news-item-detail",
+          "pathName": "pages/news-item/news-item-detail/news-item-detail",
+          "query": "",
+          "scene": null
+        },
         {
           "name": "pages/status/status",
           "pathName": "pages/status/status",
