@@ -39,7 +39,7 @@
             "path" : "pages/status/status",
             "style" :                                                                                    
             {
-                "navigationBarTitleText": "",
+                "navigationBarTitleText": "实时状态",
                 "enablePullDownRefresh": false
             }
             

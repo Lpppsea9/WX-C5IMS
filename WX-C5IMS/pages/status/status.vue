@@ -1,9 +1,12 @@
 <template>
-	<view>
-		<!-- <time-status></time-status> -->
-		<view v-for="item in localData" >{{item.id}}</view>
-		<button @tap="getWorkDataOne" style="background-color: powderblue">本地数据</button>
-		<button @tap="getWorkDataTwo" style="background-color: powderblue;margin-bottom: 30rpx;">后端接口</button>
+	<view class="">
+		<view class="status">
+			<view class="status-item">徐总</view>
+			<view class="status-item">张超DN40</view>
+			<view class="status-item">宋老二</view>
+			<view class="status-item">华泰DN50</view>
+			<view class="status-item">史#</view>
+		</view>
 	</view>
 </template>
 
@@ -17,8 +20,8 @@
 		},
 		methods: {
 			getWorkDataOne () {
-				let data = postData.data
-				console.log(data)
+				const data = postData.data
+				console.log(data[0].uid)
 			},
 			getWorkDataTwo () {
 				uni.request({
@@ -33,6 +36,18 @@
 	}
 </script>
 
-<style>
-
+<style lang="stylus" scoped>
+	.status
+		display flex
+		flex-direction row
+		flex-wrap wrap
+		.status-item
+			width 200rpx
+			height 80rpx
+			line-height 80rpx
+			text-align center
+			background #05A05E
+			margin 25rpx
+			color #fff
+			border-radius 10rpx
 </style>

@@ -1,1 +1,1 @@
-<view>实时数据</view>
+<view><view class="header"><view class="header-left"><view class="icon"></view><input class="datainput" type="text" placeholder="搜索地址/DTU"/></view></view></view>

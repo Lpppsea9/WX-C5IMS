@@ -35,6 +35,12 @@
         {
           "name": "pages/status/status",
           "pathName": "pages/status/status",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/timedata/timedata",
+          "pathName": "pages/timedata/timedata",
           "scene": null
         }
       ]

@@ -1,0 +1,22 @@
+.status.data-v-c9a1ccf4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+.status .status-item.data-v-c9a1ccf4 {
+  width: 200rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  background: #05a05e;
+  margin: 25rpx;
+  color: #fff;
+  border-radius: 10rpx;
+}
+
