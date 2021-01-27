@@ -7,43 +7,28 @@
     "urlCheck": false,
     "es6": true,
     "minified": true,
-    "postcss": true,
-    "checkSiteMap": false
+    "postcss": true
   },
   "compileType": "miniprogram",
   "libVersion": "",
   "appid": "wx5ffaacb9402e9ab5",
   "projectname": "WX-C5IMS",
   "condition": {
-    "plugin": {
+    "search": {
+      "current": -1,
+      "list": []
+    },
+    "conversation": {
+      "current": -1,
       "list": []
     },
     "game": {
-      "list": []
-    },
-    "gamePlugin": {
+      "current": -1,
       "list": []
     },
     "miniprogram": {
-      "list": [
-        {
-          "name": "pages/news-item/news-item-detail/news-item-detail",
-          "pathName": "pages/news-item/news-item-detail/news-item-detail",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/status/status",
-          "pathName": "pages/status/status",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/timedata/timedata",
-          "pathName": "pages/timedata/timedata",
-          "scene": null
-        }
-      ]
+      "current": -1,
+      "list": []
     }
   }
 }

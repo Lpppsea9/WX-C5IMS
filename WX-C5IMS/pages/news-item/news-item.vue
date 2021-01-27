@@ -1,35 +1,60 @@
 <template>
-	<view class="news-list">
-		<view class="news-item" @tap="toNewsDetail">
+	<view class="news-list" >
+		<view 
+			class="news-item" 
+			@tap="toNewsDetail(item)" 
+			v-for="(item, index) of newsList"
+			:id="item.id"
+		>
 			<view class="news-info">
-				<view class="news-title">C5-IMS平台正式对外提供公共服务</view>
-				<view class="news-desc">C5云平台已具备完善的对外API点点</view>
+				<view class="news-title">{{item.titleOne}}</view>
+				<view class="news-desc">{{item.contentOne}}</view>
 			</view>
-			<view class="news-date">2021-08-05</view>
-		</view>
-		<view class="news-item" >
-			<view class="news-info">
-				<view class="news-title">技术驱动变革，数据引领创新-C5IMS</view>
-				<view class="news-desc">C5云平台的建立，是建筑能源管理点点</view>
-			</view>
-			<view class="news-date">2021-08-02</view>
+			<view class="news-date">{{item.date}}</view>
 		</view>
 	</view>
+	
 </template>
 
 <script>
 	export default {
 		data() {
 			return {
-				
+				newsList:[]
 			}
 		},
 		methods: {
-			toNewsDetail() {
-				uni.navigateTo({
-					url:'./news-item-detail/news-item-detail'
+			// 跳转到详情
+			toNewsDetail(e) {
+				// console.log(e)
+				let detail = {
+					titleOne: e.titleOne,
+					contentOne: e.contentOne,
+					titleTwo: e.titleTwo,
+					contentTwo: e.contentTwo,
+					id: e.id,
+					date: e.date
+				}
+				// console.log(detail)
+				uni.navigateTo({	
+					url:'./news-item-detail/news-item-detail?id=' + encodeURIComponent(JSON.stringify(detail))
 				})
+			},
+			getNewsList() {
+				uni.request({
+					url: "./static/news-item.json",
+					success: (res) => {
+						this.getNewsListSucc(res)
+					}
+				})
+			},
+			getNewsListSucc(res){
+				res = res.data
+				this.newsList = res.data
 			}
+		},
+		mounted() {
+			this.getNewsList()
 		}
 	}
 </script>

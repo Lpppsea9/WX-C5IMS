@@ -1,37 +1,55 @@
 <template>
-	<view class="">
-		<view class="status">
-			<view class="status-item">徐总</view>
-			<view class="status-item">张超DN40</view>
-			<view class="status-item">宋老二</view>
-			<view class="status-item">华泰DN50</view>
-			<view class="status-item">史#</view>
+	<view>
+		<view 
+			class="status" 
+			v-for="(item, index) of statusList" 
+			:id="item.id"
+		>
+			<view 
+				class="status-item" 
+				@tap="toStatusDetail(item)"
+			>
+				{{item.userName}}
+			</view>
 		</view>
 	</view>
 </template>
 
 <script>
-	var postData = require('../../data/workdata.json');
 	export default {
 		data() {
 			return {
-				localData: postData.data
+				statusList:[]
 			}
 		},
 		methods: {
-			getWorkDataOne () {
-				const data = postData.data
-				console.log(data[0].uid)
-			},
-			getWorkDataTwo () {
+			getStatusList() {
 				uni.request({
-					url:'http://47.103.95.119/c5pms/ajax_tabledata.php?action=m_organization&limit=10',
-					success:(res) => {
-						console.log(res.data)
+					url:'./static/status.json',
+					// url:"https://unidemo.dcloud.net.cn/api/news"
+					success: (res) => {
+						this.getStatusListSucc(res)
 					}
+				})
+			},
+			getStatusListSucc(e){
+				let res = e.data
+				this.statusList = res.data
+			},
+			// 跳转到详情页面
+			toStatusDetail(e) {
+				let detail = {
+					id: e.id,
+					userName: e.userName
+				}
+				uni.navigateTo({
+					url:'status-item/status-item?id=' + encodeURIComponent(JSON.stringify(detail))
 				})
 			}
 		},
+		mounted() {
+			this.getStatusList()
+		}
 		
 	}
 </script>

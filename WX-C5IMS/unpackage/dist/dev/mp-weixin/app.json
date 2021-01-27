@@ -1,13 +1,17 @@
 {
   "pages": [
-    "pages/index/index",
     "pages/login/login",
+    "pages/index/index",
     "pages/register/register",
-    "pages/timedata/timedata",
-    "pages/status/status",
     "pages/news-item/news-item",
+    "pages/news-item/news-item",
+    "pages/news-item/news-item-detail/news-item-detail",
+    "pages/status/status",
     "pages/status/status-item/status-item",
-    "pages/news-item/news-item-detail/news-item-detail"
+    "pages/timedata/timedata",
+    "pages/timedata/time-data-detail/time-data-detail",
+    "pages/TaskList/TaskList",
+    "pages/TaskList/TaskDetail/TaskDetail"
   ],
   "subPackages": [],
   "window": {

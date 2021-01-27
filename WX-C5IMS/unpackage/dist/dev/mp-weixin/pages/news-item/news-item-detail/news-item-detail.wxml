@@ -1,1 +1,1 @@
-<view class="news-info data-v-0fcd9fb8"><view class="news-title _p data-v-0fcd9fb8">C5-IMS平台正式对外提供公共服务</view><view class="news-content _p data-v-0fcd9fb8">详情1</view></view>
+<view class="news-info data-v-0fcd9fb8"><view class="data-v-0fcd9fb8"><view class="news-titleOne _p data-v-0fcd9fb8">{{banner.titleOne}}</view><view class="news-contentOne _p data-v-0fcd9fb8">{{banner.contentOne}}</view><view class="news-titleTwo _p data-v-0fcd9fb8">{{banner.titleTwo}}</view><view class="news-contentTwo _p data-v-0fcd9fb8">{{banner.contentTwo}}</view></view></view>

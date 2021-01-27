@@ -30,6 +30,9 @@
 				<button class="btn-item" @tap="ToForm">统计报表</button>
 				<button class="btn-item" @tap="ToRank">能耗排行</button>
 			</view>
+			<view class="btns-line">
+				<button class="btn-item" @tap="ToTaskList">任务列表</button>
+			</view>
 		</view>
 		<view class="footer">
 			<view class="item home">
@@ -88,6 +91,11 @@
 				uni.navigateTo({
 			        url:"../timedata/timedata"
 			    })
+			},
+			ToTaskList() {
+				uni.navigateTo({
+				    url:"../TaskList/TaskList"
+				})
 			}
 		}
 	}

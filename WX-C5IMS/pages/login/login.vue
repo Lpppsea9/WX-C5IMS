@@ -7,7 +7,7 @@
 				</view>
 				<input  type="text" 
 						value="" 
-						v-model="user_name" 
+						v-model="userName" 
 						class="UserNumber input"
 				/>
 			</view>
@@ -17,7 +17,7 @@
 				</view>
 				<input  type="text" 
 						value="" 
-						v-model="password" 
+						v-model="passWord" 
 						class="UserPassword input"
 						password="false"
 				/>
@@ -27,7 +27,6 @@
 			<button class="btnLogin" @tap="login">登录</button>
 			<button class="btnQuit" @tap="quit">退出</button>
 		</view>
-		<text >{{warning}}</text>
 	</view>
 </template>
 
@@ -35,42 +34,42 @@
 	export default {
 		data() {
 			return {
-				user_name:"",
-				password:"",
-				warning:""
+				userName:"",
+				passWord:"",
 			}
 		},
 		methods: {
 			login(){
-				let user = {
-					"user_name": this.user_name,
-					"password": this.password
-				}
-				// console.log(user)
-				uniCloud.callFunction({
-					name:"login",
-					data:user,
-					success:(res) => { //res就是 result
-						// console.log(res)
-						let status = res.result.status;
-						if(status==0){
-							this.warning="登陆成功";
-							uni.navigateTo({
-								url:"../index/index"
-							})
-						}else if(status==1){
-							this.warning="用户名错误"
-						}else if(status==2){
-							this.warning="密码错误"
+				if (this.userName.trim() === "") {
+					uni.showToast({
+						title:"用户名不能为空",
+						icon:"none"
+					})
+				} else if (this.passWord.trim() === "") {
+					uni.showToast({
+						title:"密码不能为空",
+						icon:"none"
+					})
+				} else {
+					// 登录请求跳转
+					uni.request({
+						url: "https://www.shwanqiao.com/apis_login.php?user="+this.userName+"&pwd="+this.passWord,
+						success(res) {
+							res = res.data
+							// console.log(res);
+							if (res.mystatus === "yes") {
+								uni.redirectTo({
+									url:"../index/index"
+								})
+							} else {
+								uni.showToast({
+									title:"用户名或密码错误",
+									icon:"none"
+								})
+							}
 						}
-					},
-					fail:(err) => {
-						this.warning="用户名错误"
-					}
-					// fail:function(){
-					// 	this.warn="用户错误"
-					// },
-				})
+					})
+				}
 			},
 			quit(){
 				uni.navigateTo({
@@ -91,6 +90,7 @@
 		flex-direction: column;
 		align-items: center;
 		margin-top: 200rpx;
+		margin-left: -40px;
 	}
 	
 	.Num{
@@ -105,7 +105,7 @@
 	.input {
 		width: 400rpx;
 		padding-left: 20rpx;
-		background-color: powderblue;
+		margin-left 10px
 		border: 1px solid #333333;
 	}
 	
